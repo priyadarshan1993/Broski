@@ -9,25 +9,53 @@
 
 <style>
 body{margin:0;font-family:Poppins,sans-serif;background:#0e0e0f;color:#fff}
-header{position:sticky;top:0;background:#0e0e0f;border-bottom:1px solid #222;padding:10px;text-align:center;font-weight:600;letter-spacing:1px;font-size:14px}
+
+/* NAV */
+.topnav{
+  position:sticky;
+  top:0;
+  background:#0e0e0f;
+  border-bottom:1px solid #222;
+  padding:8px 10px;
+  overflow-x:auto;
+  white-space:nowrap;
+  z-index:10;
+}
+.topnav a{color:#ccc;text-decoration:none;margin-right:14px;font-size:13px}
+.topnav a:hover{color:#fff}
+
+/* MENU */
 .section{padding:10px 12px}
-.section h2{font-size:14px;margin:10px 0 6px;border-left:2px solid #ffb703;padding-left:6px}
+.section h2{font-size:14px;margin:12px 0 6px;border-left:2px solid #ffb703;padding-left:6px}
 .card{border-bottom:1px solid #1c1c1f}
 .item{display:flex;justify-content:space-between;padding:8px 2px;cursor:pointer;line-height:1.2}
 .name{font-size:13px}
 .price{color:#ffb703;font-weight:600;font-size:13px}
-.desc{display:none;padding:0 2px 6px;color:#9a9a9a;font-size:12px;line-height:1.3}
+.desc{display:none;padding:0 2px 6px;color:#9a9a9a;font-size:12px}
 </style>
 </head>
 
 <body>
 
-<header>FOOD MENU</header>
+<header class="topnav">
+<a href="#chef">Chef</a>
+<a href="#salad">Salad</a>
+<a href="#veg">Veg</a>
+<a href="#nonveg">Non-Veg</a>
+<a href="#tacos">Tacos</a>
+<a href="#sliders">Sliders</a>
+<a href="#burgers">Burgers</a>
+<a href="#pizza">Pizza</a>
+<a href="#lpveg">LP Veg</a>
+<a href="#lpnonveg">LP Non-Veg</a>
+<a href="#sides">Sides</a>
+<a href="#desserts">Dessert</a>
+</header>
 
 <div class="section">
 
-<h2>Chef’s Special Menu</h2>
-
+<!-- CHEF -->
+<h2 id="chef">Chef’s Special Menu</h2>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">HOUSE SPECIAL SALAD</div><div class="price">400</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">AVO RICE CUP</div><div class="price">400</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">CRISPY POLENTA</div><div class="price">400</div></div><div class="desc">Description coming soon…</div></div>
@@ -42,16 +70,16 @@ header{position:sticky;top:0;background:#0e0e0f;border-bottom:1px solid #222;pad
 <div class="card"><div class="item" onclick="t(this)"><div class="name">KIMCHI CARBONARA</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">SALMON TARTARE (6)</div><div class="price">975</div></div><div class="desc">Description coming soon…</div></div>
 
-<h2>Salad</h2>
-
+<!-- SALAD -->
+<h2 id="salad">Salad</h2>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">WATERMELON FETA SALAD</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">KALE CAESAR SALAD</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">QUINOA SALAD</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">LOTUS ROOT & LITCHI SALAD</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">BURRATA SALAD</div><div class="price">550</div></div><div class="desc">Description coming soon…</div></div>
 
-<h2>Small Plates — Vegetarian</h2>
-
+<!-- VEG SMALL -->
+<h2 id="veg">Small Plates — Vegetarian</h2>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">LOADED NACHOSS</div><div class="price">450</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">HOT CHEESE DIP</div><div class="price">475</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">HUMMUS</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
@@ -64,8 +92,8 @@ header{position:sticky;top:0;background:#0e0e0f;border-bottom:1px solid #222;pad
 <div class="card"><div class="item" onclick="t(this)"><div class="name">GUACAMOLE</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">GREEN HARVEST PLATTER</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
 
-<h2>Small Plates — Non Vegetarian</h2>
-
+<!-- NONVEG SMALL -->
+<h2 id="nonveg">Small Plates — Non-Vegetarian</h2>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">CHICKEN BIRRIA FRIES</div><div class="price">400</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">LAMB BIRRIA FRIES</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">PAN SEARED CHICKEN DUMPLINGS</div><div class="price">525</div></div><div class="desc">Description coming soon…</div></div>
@@ -80,8 +108,75 @@ header{position:sticky;top:0;background:#0e0e0f;border-bottom:1px solid #222;pad
 <div class="card"><div class="item" onclick="t(this)"><div class="name">CHAR GRILLED PORK RIBS</div><div class="price">825</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">PAN-SEARED SALMON</div><div class="price">1150</div></div><div class="desc">Description coming soon…</div></div>
 
-<h2>Desserts</h2>
+<!-- TACOS -->
+<h2 id="tacos">Tacos & Tostada</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">AVOCADO TOSTADA</div><div class="price">500</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">JACKFRUIT AL PASTOR TACO</div><div class="price">525</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">CHICKEN QUESO BIRRIA TACO</div><div class="price">600</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">PULLED PORK AL PASTOR TACO</div><div class="price">675</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">LAMB QUESO BIRRIA TACO</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
 
+<!-- SLIDERS -->
+<h2 id="sliders">Sliders</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">MUSHROOM SLIDER</div><div class="price">550</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SPICY CHICKEN SLIDER</div><div class="price">550</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">COTTAGE CHEESE SLIDER</div><div class="price">550</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">CRACKLING CHICKEN SLIDER</div><div class="price">550</div></div><div class="desc">Description coming soon…</div></div>
+
+<!-- BURGERS -->
+<h2 id="burgers">Burgers</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">FRIED CHICKEN BURGER</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SMASHED BEEF BURGER</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+
+<!-- PIZZA -->
+<h2 id="pizza">Pizzas</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">MARGHERITA PIZZA</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">THE DAILY MARGHERITA PIZZA</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">FARM FRESH PIZZA</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">BIANCO AI FUNGHI PIZZA</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">DIAVOLA PIZZA</div><div class="price">775</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">PEPPERONI PIZZA</div><div class="price">875</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">BURRATA AND PROSCIUTTO PIZZA</div><div class="price">1100</div></div><div class="desc">Description coming soon…</div></div>
+
+<!-- LARGE PLATES VEG -->
+<h2 id="lpveg">Large Plates — Vegetarian</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">DAILY STYLE AGLIO OLIO</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">PAN TOSSED ORZO PASTA</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SOIA ALLA BOLOGNESE</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SPAGHETTI SUN-DRIED TOMATO PESTO</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">WILD MUSHROOM & SOY BOWL</div><div class="price">650</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">THAI CURRY WITH RICE</div><div class="price">700</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">OVEN ROASTED RAVIOLI</div><div class="price">700</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">WILD MUSHROOM RISOTTO</div><div class="price">700</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">CHAR GRILLED COTTAGE CHEESE STEAK</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">MOROCCAN COTTAGE CHEESE</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+
+<!-- LARGE PLATES NONVEG -->
+<h2 id="lpnonveg">Large Plates — Non-Vegetarian</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">CLASSIC GRILLED CHICKEN</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SHOYU CHICKEN RAMEN</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">MOROCCAN CHICKEN</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">LASAGNA DI POLLO AL FORNO</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">GRILLED SOUS VIDE CHICKEN</div><div class="price">725</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">PEPPER-CORN TENDERLOIN STEAK</div><div class="price">775</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">PAN ROASTED RED SNAPPER</div><div class="price">825</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">MOROCCAN LAMB</div><div class="price">825</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SINGAPOREAN CHILI GARLIC PRAWNS</div><div class="price">875</div></div><div class="desc">Description coming soon…</div></div>
+
+<!-- SIDES -->
+<h2 id="sides">Sides</h2>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">HERBED MASHED POTATOES</div><div class="price">275</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">GARLIC BREAD</div><div class="price">275</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">FRENCH FRIES</div><div class="price">325</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SAUTEED MUSHROOMS</div><div class="price">325</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">FRIES PERI PERI</div><div class="price">350</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">TRUFFLE FRIES</div><div class="price">375</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">FRENCH FRIES WITH CHEESE</div><div class="price">375</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">GARLIC BREAD WITH CHEESE</div><div class="price">375</div></div><div class="desc">Description coming soon…</div></div>
+<div class="card"><div class="item" onclick="t(this)"><div class="name">SAUTEED VEGETABLES</div><div class="price">375</div></div><div class="desc">Description coming soon…</div></div>
+
+<!-- DESSERT -->
+<h2 id="desserts">Desserts</h2>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">FLOURLESS DARK CHOCOLATE MUD CAKE</div><div class="price">450</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">WILD BERRY "PANNA COTTA"</div><div class="price">450</div></div><div class="desc">Description coming soon…</div></div>
 <div class="card"><div class="item" onclick="t(this)"><div class="name">ORANGE AND MASCARPONE MOUSSE</div><div class="price">450</div></div><div class="desc">Description coming soon…</div></div>
@@ -95,6 +190,13 @@ function t(el){
   var d = el.nextElementSibling;
   d.style.display = d.style.display==="block"?"none":"block";
 }
+document.querySelectorAll('.topnav a').forEach(a=>{
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({behavior:'smooth'});
+  });
+});
 </script>
 
 </body>
